@@ -32,7 +32,7 @@
     "@backstage/plugin-cicd-statistics": "^0.1.9",
     "@gitbeaker/browser": "^35.6.0",
     "@gitbeaker/core": "^35.6.0",
-    "luxon": "^3.0.0",
+    "luxon": "^3.2.1",
     "p-limit": "^4.0.0",
     "@backstage/core-plugin-api": "^1.0.4",
     "@backstage/catalog-model": "^1.1.0"
