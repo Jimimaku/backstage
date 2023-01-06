@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@types/luxon": "^3.0.0",
-    "luxon": "^3.0.0",
+    "luxon": "^3.2.1",
     "@backstage/types": "^1.0.0"
   },
   "devDependencies": {
