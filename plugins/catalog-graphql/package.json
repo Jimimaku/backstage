@@ -38,7 +38,7 @@
     "@backstage/config": "^1.0.1",
     "@backstage/types": "^1.0.0",
     "apollo-server": "^3.0.0",
-    "graphql": "^16.0.0",
+    "graphql": "^16.8.1",
     "graphql-modules": "^2.0.0",
     "graphql-tag": "^2.11.0",
     "graphql-type-json": "^0.3.2",
