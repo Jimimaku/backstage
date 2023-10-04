@@ -41,7 +41,7 @@
     "@types/express": "^4.17.6",
     "express": "^4.17.1",
     "express-promise-router": "^4.1.0",
-    "zod": "^3.11.6"
+    "zod": "^3.22.3"
   },
   "devDependencies": {
     "@backstage/cli": "^0.18.0",
