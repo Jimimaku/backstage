@@ -45,7 +45,7 @@
     "node-abort-controller": "^3.0.1",
     "uuid": "^8.0.0",
     "winston": "^3.2.1",
-    "zod": "^3.9.5"
+    "zod": "^3.22.3"
   },
   "devDependencies": {
     "@backstage/backend-test-utils": "^0.1.26",
