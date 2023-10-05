@@ -76,7 +76,7 @@
     "yaml": "^2.0.0",
     "vm2": "^3.9.6",
     "zen-observable": "^0.8.15",
-    "zod": "^3.11.6"
+    "zod": "^3.22.3"
   },
   "devDependencies": {
     "@backstage/backend-test-utils": "^0.1.26",
