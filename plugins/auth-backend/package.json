@@ -52,7 +52,7 @@
     "express-session": "^1.17.1",
     "fs-extra": "10.1.0",
     "google-auth-library": "^8.0.0",
-    "jose": "^4.6.0",
+    "jose": "^4.15.5",
     "jwt-decode": "^3.1.0",
     "knex": "^2.0.0",
     "lodash": "^4.17.21",
