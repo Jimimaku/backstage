@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@backstage/catalog-model": "^1.1.0",
-    "@kubernetes/client-node": "^0.17.0"
+    "@kubernetes/client-node": "^0.18.1"
   },
   "devDependencies": {
     "@backstage/cli": "^0.18.0"
