@@ -66,7 +66,7 @@
     "azure-devops-node-api": "^11.0.1",
     "dockerode": "^3.3.1",
     "example-app": "link:../app",
-    "express": "^4.17.1",
+    "express": "^4.21.1",
     "express-promise-router": "^4.1.0",
     "express-prom-bundle": "^6.3.6",
     "luxon": "^3.0.0",
