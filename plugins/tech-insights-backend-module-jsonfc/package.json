@@ -40,7 +40,7 @@
     "@backstage/plugin-tech-insights-common": "^0.2.5",
     "@backstage/plugin-tech-insights-node": "^0.3.2",
     "ajv": "^8.10.0",
-    "json-rules-engine": "^6.1.2",
+    "json-rules-engine": "^7.2.1",
     "lodash": "^4.17.21",
     "luxon": "^3.0.0",
     "winston": "^3.2.1"
