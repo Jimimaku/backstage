@@ -42,7 +42,6 @@ import { wrapServer } from '@backstage/backend-openapi-utils';
 import { Server } from 'http';
 import { mockCredentials, mockServices } from '@backstage/backend-test-utils';
 import { LocationAnalyzer } from '@backstage/plugin-catalog-node';
-import { PermissionsService } from '@backstage/backend-plugin-api';
 
 describe('createRouter readonly disabled', () => {
   let entitiesCatalog: jest.Mocked<EntitiesCatalog>;
@@ -51,9 +50,9 @@ describe('createRouter readonly disabled', () => {
   let app: express.Express | Server;
   let refreshService: RefreshService;
   let locationAnalyzer: jest.Mocked<LocationAnalyzer>;
-  let permissionsService: jest.Mocked<PermissionsService>;
+  const permissionsService = mockServices.permissions.mock();
 
-  beforeAll(async () => {
+  beforeEach(async () => {
     entitiesCatalog = {
       entities: jest.fn(),
       entitiesBatch: jest.fn(),
@@ -69,15 +68,9 @@ describe('createRouter readonly disabled', () => {
       deleteLocation: jest.fn(),
       getLocationByEntity: jest.fn(),
     };
-
     locationAnalyzer = {
       analyzeLocation: jest.fn(),
     };
-    permissionsService = {
-      authorize: jest.fn(),
-      authorizeConditional: jest.fn(),
-    };
-
     refreshService = { refresh: jest.fn() };
     orchestrator = { process: jest.fn() };
     const router = await createRouter({
@@ -91,13 +84,13 @@ describe('createRouter readonly disabled', () => {
       auth: mockServices.auth(),
       httpAuth: mockServices.httpAuth(),
       locationAnalyzer,
-      permissionsService: permissionsService,
+      permissionsService,
     });
     app = await wrapServer(express().use(router));
   });
 
   beforeEach(() => {
-    jest.resetAllMocks();
+    jest.clearAllMocks();
   });
 
   describe('POST /refresh', () => {
@@ -135,6 +128,38 @@ describe('createRouter readonly disabled', () => {
         { apiVersion: 'a', kind: 'b', metadata: { name: 'n' } },
       ];
 
+      entitiesCatalog.entities.mockResolvedValueOnce({
+        entities: { type: 'object', entities: [entities[0]] },
+        pageInfo: { hasNextPage: false },
+      });
+
+      const response = await request(app).get('/entities');
+
+      expect(response.status).toEqual(200);
+      expect(response.body).toEqual(entities);
+    });
+
+    it('happy path: lists entities when by-entities emulation is enabled', async () => {
+      const router = await createRouter({
+        entitiesCatalog,
+        locationService,
+        orchestrator,
+        logger: mockServices.logger.mock(),
+        refreshService,
+        config: new ConfigReader(undefined),
+        permissionIntegrationRouter: express.Router(),
+        auth: mockServices.auth(),
+        httpAuth: mockServices.httpAuth(),
+        locationAnalyzer,
+        permissionsService,
+        disableRelationsCompatibility: true, // added
+      });
+      app = await wrapServer(express().use(router));
+
+      const entities: Entity[] = [
+        { apiVersion: 'a', kind: 'b', metadata: { name: 'n' } },
+      ];
+
       entitiesCatalog.queryEntities.mockResolvedValueOnce({
         items: { type: 'object', entities: [entities[0]] },
         pageInfo: {},
@@ -148,6 +173,49 @@ describe('createRouter readonly disabled', () => {
     });
 
     it('parses single and multiple request parameters and passes them down', async () => {
+      entitiesCatalog.entities.mockResolvedValueOnce({
+        entities: { type: 'object', entities: [] },
+        pageInfo: { hasNextPage: false },
+      });
+      const response = await request(app).get(
+        '/entities?filter=a=1,a=2,b=3&filter=c=4',
+      );
+
+      expect(response.status).toEqual(200);
+      expect(entitiesCatalog.entities).toHaveBeenCalledTimes(1);
+      expect(entitiesCatalog.entities).toHaveBeenCalledWith({
+        filter: {
+          anyOf: [
+            {
+              allOf: [
+                { key: 'a', values: ['1', '2'] },
+                { key: 'b', values: ['3'] },
+              ],
+            },
+            { key: 'c', values: ['4'] },
+          ],
+        },
+        credentials: mockCredentials.user(),
+      });
+    });
+
+    it('parses single and multiple request parameters and passes them down when by-entities emulation is enabled', async () => {
+      const router = await createRouter({
+        entitiesCatalog,
+        locationService,
+        orchestrator,
+        logger: mockServices.logger.mock(),
+        refreshService,
+        config: new ConfigReader(undefined),
+        permissionIntegrationRouter: express.Router(),
+        auth: mockServices.auth(),
+        httpAuth: mockServices.httpAuth(),
+        locationAnalyzer,
+        permissionsService,
+        disableRelationsCompatibility: true, // added
+      });
+      app = await wrapServer(express().use(router));
+
       entitiesCatalog.queryEntities.mockResolvedValueOnce({
         items: { type: 'object', entities: [] },
         pageInfo: {},
@@ -864,7 +932,7 @@ describe('createRouter readonly and raw json enabled', () => {
   let entitiesCatalog: jest.Mocked<EntitiesCatalog>;
   let app: express.Express;
   let locationService: jest.Mocked<LocationService>;
-  let permissionsService: jest.Mocked<PermissionsService>;
+  const permissionsService = mockServices.permissions.mock();
 
   beforeAll(async () => {
     entitiesCatalog = {
@@ -895,13 +963,13 @@ describe('createRouter readonly and raw json enabled', () => {
       permissionIntegrationRouter: express.Router(),
       auth: mockServices.auth(),
       httpAuth: mockServices.httpAuth(),
-      permissionsService: permissionsService,
+      permissionsService,
     });
     app = express().use(router);
   });
 
   beforeEach(() => {
-    jest.resetAllMocks();
+    jest.clearAllMocks();
   });
 
   describe('GET /entities', () => {
@@ -1066,7 +1134,7 @@ describe('NextRouter permissioning', () => {
   let locationService: jest.Mocked<LocationService>;
   let app: express.Express;
   let refreshService: RefreshService;
-  let permissionsService: jest.Mocked<PermissionsService>;
+  const permissionsService = mockServices.permissions.mock();
 
   const fakeRule = createPermissionRule({
     name: 'FAKE_RULE',
@@ -1113,13 +1181,13 @@ describe('NextRouter permissioning', () => {
       }),
       auth: mockServices.auth(),
       httpAuth: mockServices.httpAuth(),
-      permissionsService: permissionsService,
+      permissionsService,
     });
     app = express().use(router);
   });
 
   afterEach(() => {
-    jest.resetAllMocks();
+    jest.clearAllMocks();
   });
 
   it('accepts and evaluates conditions at the apply-conditions endpoint', async () => {
