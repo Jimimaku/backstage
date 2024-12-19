@@ -7,6 +7,7 @@
 
 import { ForwardRefExoticComponent } from 'react';
 import { default as React_2 } from 'react';
+import * as React_3 from 'react';
 import { RefAttributes } from 'react';
 
 // @public (undocumented)
@@ -116,7 +117,7 @@ export const Button: React_2.ForwardRefExoticComponent<
 // @public
 export interface ButtonProps {
   // (undocumented)
-  children: React_2.ReactNode;
+  children: React.ReactNode;
   // (undocumented)
   disabled?: boolean;
   // (undocumented)
@@ -124,9 +125,13 @@ export interface ButtonProps {
   // (undocumented)
   iconStart?: IconNames;
   // (undocumented)
-  size?: 'small' | 'medium';
+  size?: 'small' | 'medium' | Partial<Record<Breakpoint, 'small' | 'medium'>>;
   // (undocumented)
-  variant?: 'primary' | 'secondary' | 'tertiary';
+  variant?:
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
+    | Partial<Record<Breakpoint, 'primary' | 'secondary' | 'tertiary'>>;
 }
 
 // @public (undocumented)
@@ -266,10 +271,7 @@ export interface GridProps extends SpaceProps, ColorProps {
 }
 
 // @public (undocumented)
-export const Icon: (props: {
-  name: IconNames;
-  size?: number;
-}) => React_2.JSX.Element;
+export const Icon: (props: IconProps) => React_2.JSX.Element;
 
 // @public (undocumented)
 export type IconMap = Partial<Record<IconNames, React.ComponentType>>;
@@ -293,6 +295,12 @@ export type IconNames =
   | 'heart'
   | 'plus'
   | 'trash';
+
+// @public (undocumented)
+export type IconProps = {
+  name: IconNames;
+  size?: number;
+};
 
 // @public (undocumented)
 export const Inline: ForwardRefExoticComponent<
@@ -456,6 +464,48 @@ export interface StackProps extends SpaceProps, ColorProps {
   // (undocumented)
   style?: React.CSSProperties;
 }
+
+// @public (undocumented)
+export const Table: React_3.ForwardRefExoticComponent<
+  React_3.HTMLAttributes<HTMLTableElement> &
+    React_3.RefAttributes<HTMLTableElement>
+>;
+
+// @public (undocumented)
+export const TableBody: React_3.ForwardRefExoticComponent<
+  React_3.HTMLAttributes<HTMLTableSectionElement> &
+    React_3.RefAttributes<HTMLTableSectionElement>
+>;
+
+// @public (undocumented)
+export const TableCell: React_3.ForwardRefExoticComponent<
+  React_3.TdHTMLAttributes<HTMLTableCellElement> &
+    React_3.RefAttributes<HTMLTableCellElement>
+>;
+
+// @public (undocumented)
+export const TableFooter: React_3.ForwardRefExoticComponent<
+  React_3.HTMLAttributes<HTMLTableSectionElement> &
+    React_3.RefAttributes<HTMLTableSectionElement>
+>;
+
+// @public (undocumented)
+export const TableHead: React_3.ForwardRefExoticComponent<
+  React_3.ThHTMLAttributes<HTMLTableCellElement> &
+    React_3.RefAttributes<HTMLTableCellElement>
+>;
+
+// @public (undocumented)
+export const TableHeader: React_3.ForwardRefExoticComponent<
+  React_3.HTMLAttributes<HTMLTableSectionElement> &
+    React_3.RefAttributes<HTMLTableSectionElement>
+>;
+
+// @public (undocumented)
+export const TableRow: React_3.ForwardRefExoticComponent<
+  React_3.HTMLAttributes<HTMLTableRowElement> &
+    React_3.RefAttributes<HTMLTableRowElement>
+>;
 
 // @public (undocumented)
 export type Theme = keyof typeof themes;
