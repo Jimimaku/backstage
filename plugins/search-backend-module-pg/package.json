@@ -53,7 +53,7 @@
     "@backstage/backend-plugin-api": "workspace:^",
     "@backstage/config": "workspace:^",
     "@backstage/plugin-search-backend-node": "workspace:^",
-    "@backstage/plugin-search-common": "workspace:^",
+    "@backstage/plugin-search-common": "0.3.1",
     "knex": "^3.0.0",
     "lodash": "^4.17.21",
     "uuid": "^11.0.0"
