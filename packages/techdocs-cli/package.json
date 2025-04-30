@@ -44,7 +44,7 @@
     "watch": "./src"
   },
   "dependencies": {
-    "@backstage/backend-defaults": "workspace:^",
+    "@backstage/backend-defaults": "0.1.0",
     "@backstage/catalog-model": "workspace:^",
     "@backstage/cli-common": "workspace:^",
     "@backstage/config": "workspace:^",
