@@ -42,7 +42,7 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/backend-plugin-api": "workspace:^",
+    "@backstage/backend-plugin-api": "0.1.0",
     "@backstage/plugin-scaffolder-node": "workspace:^",
     "@backstage/plugin-scaffolder-node-test-utils": "workspace:^",
     "@backstage/types": "workspace:^",
