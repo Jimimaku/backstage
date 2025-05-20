@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@backstage/backend-common": "^0.25.0",
-    "@backstage/backend-plugin-api": "workspace:^",
+    "@backstage/backend-plugin-api": "0.1.0",
     "@backstage/errors": "workspace:^",
     "@backstage/plugin-auth-node": "workspace:^",
     "@types/express": "^4.17.6",
