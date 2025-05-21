@@ -39,13 +39,13 @@
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^11.0.0",
     "@backstage/backend-common": "^0.25.0",
-    "@backstage/backend-plugin-api": "workspace:^",
+    "@backstage/backend-plugin-api": "0.1.0",
     "@backstage/catalog-model": "workspace:^",
     "@backstage/config": "workspace:^",
     "@backstage/integration": "workspace:^",
-    "@backstage/plugin-catalog-backend": "workspace:^",
+    "@backstage/plugin-catalog-backend": "2.0.0",
     "@backstage/plugin-catalog-common": "workspace:^",
-    "@backstage/plugin-catalog-node": "workspace:^",
+    "@backstage/plugin-catalog-node": "1.0.0",
     "@backstage/types": "workspace:^",
     "winston": "^3.2.1",
     "yaml": "^2.1.1"
