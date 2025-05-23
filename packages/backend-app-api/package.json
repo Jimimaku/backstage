@@ -53,7 +53,7 @@
     "@backstage/backend-plugin-api": "workspace:^",
     "@backstage/cli-common": "workspace:^",
     "@backstage/config": "workspace:^",
-    "@backstage/config-loader": "workspace:^",
+    "@backstage/config-loader": "0.1.1",
     "@backstage/errors": "workspace:^",
     "@backstage/plugin-auth-node": "workspace:^",
     "@backstage/plugin-permission-node": "workspace:^",
