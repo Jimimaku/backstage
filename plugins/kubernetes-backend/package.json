@@ -71,7 +71,7 @@
     "@backstage/integration-aws-node": "workspace:^",
     "@backstage/plugin-auth-node": "workspace:^",
     "@backstage/plugin-catalog-node": "workspace:^",
-    "@backstage/plugin-kubernetes-common": "workspace:^",
+    "@backstage/plugin-kubernetes-common": "0.9.5",
     "@backstage/plugin-kubernetes-node": "workspace:^",
     "@backstage/plugin-permission-common": "workspace:^",
     "@backstage/plugin-permission-node": "workspace:^",
