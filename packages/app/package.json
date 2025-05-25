@@ -55,7 +55,7 @@
     "@backstage/plugin-devtools": "workspace:^",
     "@backstage/plugin-home": "workspace:^",
     "@backstage/plugin-kubernetes": "workspace:^",
-    "@backstage/plugin-kubernetes-cluster": "workspace:^",
+    "@backstage/plugin-kubernetes-cluster": "0.0.25",
     "@backstage/plugin-notifications": "workspace:^",
     "@backstage/plugin-org": "workspace:^",
     "@backstage/plugin-permission-react": "workspace:^",
