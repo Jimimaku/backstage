@@ -30,7 +30,7 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/backend-defaults": "workspace:^",
+    "@backstage/backend-defaults": "0.1.0",
     "@backstage/backend-plugin-api": "workspace:^",
     "@backstage/catalog-model": "workspace:^",
     "@backstage/plugin-app-backend": "workspace:^",
@@ -48,7 +48,7 @@
     "@backstage/plugin-events-backend-module-google-pubsub": "workspace:^",
     "@backstage/plugin-kubernetes-backend": "workspace:^",
     "@backstage/plugin-mcp-actions-backend": "workspace:^",
-    "@backstage/plugin-notifications-backend": "workspace:^",
+    "@backstage/plugin-notifications-backend": "0.0.1",
     "@backstage/plugin-permission-backend": "workspace:^",
     "@backstage/plugin-permission-backend-module-allow-all-policy": "workspace:^",
     "@backstage/plugin-permission-common": "workspace:^",
