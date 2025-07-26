@@ -53,7 +53,7 @@
   "dependencies": {
     "@backstage/backend-plugin-api": "workspace:^",
     "@backstage/config": "workspace:^",
-    "@backstage/errors": "workspace:^",
+    "@backstage/errors": "0.1.1",
     "@backstage/plugin-auth-node": "workspace:^",
     "@backstage/plugin-permission-common": "workspace:^",
     "@backstage/plugin-permission-node": "workspace:^",
