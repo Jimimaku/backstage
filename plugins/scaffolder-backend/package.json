@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@backstage/backend-defaults": "workspace:^",
-    "@backstage/backend-openapi-utils": "workspace:^",
+    "@backstage/backend-openapi-utils": "0.0.1",
     "@backstage/backend-plugin-api": "workspace:^",
     "@backstage/catalog-model": "workspace:^",
     "@backstage/config": "workspace:^",
