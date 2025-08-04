@@ -71,7 +71,6 @@ import { OpenIdConnectApi } from '@backstage/core-plugin-api';
 import { PendingOAuthRequest } from '@backstage/core-plugin-api';
 import { ProfileInfo } from '@backstage/core-plugin-api';
 import { ProfileInfoApi } from '@backstage/core-plugin-api';
-import { PropsWithChildren } from 'react';
 import { ReactNode } from 'react';
 import { RouteRef as RouteRef_2 } from '@backstage/frontend-plugin-api';
 import { SessionApi } from '@backstage/core-plugin-api';
@@ -115,9 +114,12 @@ export const AnalyticsContext: (options: {
 }) => JSX_2.Element;
 
 // @public
-export type AnalyticsContextValue = CommonAnalyticsContext & {
-  [param in string]: string | boolean | number | undefined;
-};
+export interface AnalyticsContextValue {
+  // (undocumented)
+  [key: string]: string | boolean | number | undefined;
+  extensionId: string;
+  pluginId: string;
+}
 
 // @public
 export type AnalyticsEvent = {
@@ -245,8 +247,6 @@ export interface AppNodeSpec {
   readonly id: string;
   // (undocumented)
   readonly plugin?: FrontendPlugin;
-  // @deprecated (undocumented)
-  readonly source?: FrontendPlugin;
 }
 
 // @public
@@ -268,12 +268,11 @@ export const AppRootWrapperBlueprint: ExtensionBlueprint<{
   kind: 'app-root-wrapper';
   name: undefined;
   params: {
-    Component: ComponentType<PropsWithChildren<{}>>;
+    Component?: [error: 'Use the `component` parameter instead'];
+    component: (props: { children: ReactNode }) => JSX.Element | null;
   };
   output: ConfigurableExtensionDataRef<
-    ComponentType<{
-      children?: ReactNode | undefined;
-    }>,
+    (props: { children: ReactNode }) => JSX.Element | null,
     'app.root.wrapper',
     {}
   >;
@@ -282,9 +281,7 @@ export const AppRootWrapperBlueprint: ExtensionBlueprint<{
   configInput: {};
   dataRefs: {
     component: ConfigurableExtensionDataRef<
-      ComponentType<{
-        children?: ReactNode | undefined;
-      }>,
+      (props: { children: ReactNode }) => JSX.Element | null,
       'app.root.wrapper',
       {}
     >;
@@ -332,12 +329,6 @@ export { BackstageUserIdentity };
 export { bitbucketAuthApiRef };
 
 export { bitbucketServerAuthApiRef };
-
-// @public
-export type CommonAnalyticsContext = {
-  pluginId: string;
-  extensionId: string;
-};
 
 // @public (undocumented)
 export type ComponentRef<T extends {} = {}> = {
@@ -823,7 +814,10 @@ export function createRouteRef<
     | undefined = undefined,
   TParamKeys extends string = string,
 >(config?: {
-  readonly params: string extends TParamKeys ? (keyof TParams)[] : TParamKeys[];
+  readonly params?: string extends TParamKeys
+    ? (keyof TParams)[]
+    : TParamKeys[];
+  aliasFor?: string;
 }): RouteRef<
   keyof TParams extends never
     ? undefined
@@ -1096,7 +1090,6 @@ export interface ExtensionBoundaryProps {
   children: ReactNode;
   // (undocumented)
   node: AppNode;
-  routable?: boolean;
 }
 
 // @public (undocumented)
@@ -1724,12 +1717,11 @@ export const RouterBlueprint: ExtensionBlueprint<{
   kind: 'app-router-component';
   name: undefined;
   params: {
-    Component: ComponentType<PropsWithChildren<{}>>;
+    Component?: [error: 'Use the `component` parameter instead'];
+    component: (props: { children: ReactNode }) => JSX.Element | null;
   };
   output: ConfigurableExtensionDataRef<
-    ComponentType<{
-      children?: ReactNode | undefined;
-    }>,
+    (props: { children: ReactNode }) => JSX.Element | null,
     'app.router.wrapper',
     {}
   >;
@@ -1738,9 +1730,7 @@ export const RouterBlueprint: ExtensionBlueprint<{
   configInput: {};
   dataRefs: {
     component: ConfigurableExtensionDataRef<
-      ComponentType<{
-        children?: ReactNode | undefined;
-      }>,
+      (props: { children: ReactNode }) => JSX.Element | null,
       'app.router.wrapper',
       {}
     >;
@@ -1765,17 +1755,14 @@ export interface RouteResolutionApi {
       | RouteRef<TParams>
       | SubRouteRef<TParams>
       | ExternalRouteRef<TParams>,
-    options?: RouteResolutionApiResolveOptions,
+    options?: {
+      sourcePath?: string;
+    },
   ): RouteFunc<TParams> | undefined;
 }
 
 // @public
 export const routeResolutionApiRef: ApiRef<RouteResolutionApi>;
-
-// @public (undocumented)
-export type RouteResolutionApiResolveOptions = {
-  sourcePath?: string;
-};
 
 export { SessionApi };
 
