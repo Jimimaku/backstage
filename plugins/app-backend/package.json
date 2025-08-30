@@ -55,8 +55,8 @@
   "dependencies": {
     "@backstage/backend-plugin-api": "workspace:^",
     "@backstage/config": "workspace:^",
-    "@backstage/config-loader": "workspace:^",
-    "@backstage/errors": "workspace:^",
+    "@backstage/config-loader": "0.1.1",
+    "@backstage/errors": "0.1.1",
     "@backstage/plugin-app-node": "workspace:^",
     "@backstage/plugin-auth-node": "workspace:^",
     "@backstage/types": "workspace:^",
