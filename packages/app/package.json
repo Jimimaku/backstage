@@ -59,7 +59,7 @@
     "@backstage/plugin-notifications": "workspace:^",
     "@backstage/plugin-org": "workspace:^",
     "@backstage/plugin-permission-react": "workspace:^",
-    "@backstage/plugin-scaffolder": "workspace:^",
+    "@backstage/plugin-scaffolder": "0.1.1",
     "@backstage/plugin-scaffolder-react": "workspace:^",
     "@backstage/plugin-search": "workspace:^",
     "@backstage/plugin-search-common": "workspace:^",
