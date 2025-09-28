@@ -49,10 +49,10 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/config": "workspace:^",
+    "@backstage/config": "0.1.1",
     "@backstage/errors": "workspace:^",
     "@backstage/types": "workspace:^",
-    "@backstage/version-bridge": "workspace:^",
+    "@backstage/version-bridge": "0.1.0",
     "history": "^5.0.0"
   },
   "devDependencies": {
