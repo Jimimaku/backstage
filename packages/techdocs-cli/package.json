@@ -44,11 +44,11 @@
     "watch": "./src"
   },
   "dependencies": {
-    "@backstage/backend-defaults": "workspace:^",
-    "@backstage/catalog-model": "workspace:^",
+    "@backstage/backend-defaults": "0.1.0",
+    "@backstage/catalog-model": "0.1.1",
     "@backstage/cli-common": "workspace:^",
     "@backstage/config": "workspace:^",
-    "@backstage/plugin-techdocs-node": "workspace:^",
+    "@backstage/plugin-techdocs-node": "0.11.12",
     "commander": "^12.0.0",
     "fs-extra": "^11.0.0",
     "global-agent": "^3.0.0",
