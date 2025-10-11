@@ -68,7 +68,7 @@
     "@backstage/catalog-model": "workspace:^",
     "@backstage/config": "workspace:^",
     "@backstage/errors": "workspace:^",
-    "@backstage/integration": "workspace:^",
+    "@backstage/integration": "0.1.0",
     "@backstage/plugin-auth-node": "workspace:^",
     "@backstage/plugin-bitbucket-cloud-common": "workspace:^",
     "@backstage/plugin-catalog-backend-module-scaffolder-entity-model": "workspace:^",
