@@ -53,8 +53,8 @@
   "dependencies": {
     "@backstage/catalog-model": "workspace:^",
     "@backstage/core-compat-api": "workspace:^",
-    "@backstage/core-components": "workspace:^",
-    "@backstage/core-plugin-api": "workspace:^",
+    "@backstage/core-components": "0.1.0",
+    "@backstage/core-plugin-api": "0.1.0",
     "@backstage/frontend-plugin-api": "workspace:^",
     "@backstage/plugin-catalog-common": "workspace:^",
     "@backstage/plugin-catalog-react": "workspace:^",
