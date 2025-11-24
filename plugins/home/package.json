@@ -63,7 +63,7 @@
     "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/frontend-plugin-api": "workspace:^",
-    "@backstage/plugin-catalog-react": "workspace:^",
+    "@backstage/plugin-catalog-react": "0.0.1",
     "@backstage/plugin-home-react": "workspace:^",
     "@backstage/theme": "workspace:^",
     "@material-ui/core": "^4.12.2",
