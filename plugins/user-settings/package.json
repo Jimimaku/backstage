@@ -61,7 +61,7 @@
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/errors": "workspace:^",
     "@backstage/frontend-plugin-api": "workspace:^",
-    "@backstage/plugin-catalog-react": "workspace:^",
+    "@backstage/plugin-catalog-react": "0.0.1",
     "@backstage/plugin-signals-react": "workspace:^",
     "@backstage/plugin-user-settings-common": "workspace:^",
     "@backstage/theme": "workspace:^",
