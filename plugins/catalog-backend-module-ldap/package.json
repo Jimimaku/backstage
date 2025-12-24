@@ -42,9 +42,9 @@
     "@backstage/catalog-model": "workspace:^",
     "@backstage/config": "workspace:^",
     "@backstage/errors": "workspace:^",
-    "@backstage/plugin-catalog-common": "workspace:^",
+    "@backstage/plugin-catalog-common": "0.1.0",
     "@backstage/plugin-catalog-node": "workspace:^",
-    "@backstage/types": "workspace:^",
+    "@backstage/types": "0.1.1",
     "ldapts": "^8.0.6",
     "lodash": "^4.17.21",
     "uuid": "^11.0.0"
