@@ -56,18 +56,18 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/core-components": "workspace:^",
-    "@backstage/core-plugin-api": "workspace:^",
+    "@backstage/core-components": "0.1.0",
+    "@backstage/core-plugin-api": "0.1.0",
     "@backstage/frontend-plugin-api": "workspace:^",
     "@backstage/plugin-search-common": "workspace:^",
     "@backstage/theme": "workspace:^",
-    "@backstage/types": "workspace:^",
+    "@backstage/types": "0.1.1",
     "@backstage/version-bridge": "workspace:^",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "4.0.0-alpha.61",
     "lodash": "^4.17.21",
-    "qs": "^6.9.4",
+    "qs": "^6.14.2",
     "react-use": "^17.3.2",
     "uuid": "^11.0.2"
   },
