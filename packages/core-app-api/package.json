@@ -49,7 +49,7 @@
     "@backstage/config": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/types": "workspace:^",
-    "@backstage/version-bridge": "workspace:^",
+    "@backstage/version-bridge": "0.1.0",
     "@types/prop-types": "^15.7.3",
     "history": "^5.0.0",
     "i18next": "^22.4.15",
