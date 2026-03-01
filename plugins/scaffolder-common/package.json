@@ -62,8 +62,8 @@
   "dependencies": {
     "@backstage/catalog-model": "workspace:^",
     "@backstage/errors": "workspace:^",
-    "@backstage/integration": "workspace:^",
-    "@backstage/plugin-permission-common": "workspace:^",
+    "@backstage/integration": "0.1.0",
+    "@backstage/plugin-permission-common": "0.1.0",
     "@backstage/types": "workspace:^",
     "@microsoft/fetch-event-source": "^2.0.1",
     "@types/json-schema": "^7.0.9",
