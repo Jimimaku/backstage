@@ -53,11 +53,11 @@
   "dependencies": {
     "@azure/identity": "^4.0.0",
     "@azure/storage-blob": "^12.5.0",
-    "@backstage/backend-plugin-api": "workspace:^",
+    "@backstage/backend-plugin-api": "0.1.0",
     "@backstage/config": "workspace:^",
     "@backstage/integration": "workspace:^",
-    "@backstage/plugin-catalog-common": "workspace:^",
-    "@backstage/plugin-catalog-node": "workspace:^",
+    "@backstage/plugin-catalog-common": "0.1.0",
+    "@backstage/plugin-catalog-node": "1.0.0",
     "uuid": "^11.0.0"
   },
   "devDependencies": {
