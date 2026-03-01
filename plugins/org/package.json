@@ -52,18 +52,18 @@
   },
   "dependencies": {
     "@backstage/catalog-model": "workspace:^",
-    "@backstage/core-components": "workspace:^",
-    "@backstage/core-plugin-api": "workspace:^",
+    "@backstage/core-components": "0.1.0",
+    "@backstage/core-plugin-api": "0.1.0",
     "@backstage/frontend-plugin-api": "workspace:^",
     "@backstage/plugin-catalog-common": "workspace:^",
-    "@backstage/plugin-catalog-react": "workspace:^",
+    "@backstage/plugin-catalog-react": "0.0.1",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "4.0.0-alpha.61",
     "lodash": "^4.17.21",
     "p-limit": "^3.1.0",
     "pluralize": "^8.0.0",
-    "qs": "^6.10.1",
+    "qs": "^6.14.2",
     "react-use": "^17.2.4"
   },
   "devDependencies": {
