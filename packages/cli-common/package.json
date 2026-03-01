@@ -48,7 +48,7 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/errors": "workspace:^",
+    "@backstage/errors": "0.1.1",
     "cross-spawn": "^7.0.3",
     "global-agent": "^3.0.0",
     "undici": "^7.2.3"
