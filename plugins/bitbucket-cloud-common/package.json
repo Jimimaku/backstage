@@ -41,7 +41,7 @@
     "update-models": "yarn refresh-schema && yarn generate-models && yarn reduce-models"
   },
   "dependencies": {
-    "@backstage/integration": "workspace:^",
+    "@backstage/integration": "1.20.1",
     "cross-fetch": "^4.0.0"
   },
   "devDependencies": {
