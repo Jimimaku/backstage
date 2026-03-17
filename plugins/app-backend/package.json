@@ -58,7 +58,7 @@
     "@backstage/config": "workspace:^",
     "@backstage/config-loader": "workspace:^",
     "@backstage/errors": "workspace:^",
-    "@backstage/plugin-app-node": "workspace:^",
+    "@backstage/plugin-app-node": "0.1.0",
     "@backstage/plugin-auth-node": "workspace:^",
     "@backstage/types": "workspace:^",
     "express": "^4.22.0",
