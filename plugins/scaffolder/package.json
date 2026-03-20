@@ -74,7 +74,7 @@
     "@backstage/plugin-techdocs-common": "workspace:^",
     "@backstage/plugin-techdocs-react": "workspace:^",
     "@backstage/types": "workspace:^",
-    "@backstage/ui": "workspace:^",
+    "@backstage/ui": "0.6.0",
     "@codemirror/language": "^6.0.0",
     "@codemirror/legacy-modes": "^6.1.0",
     "@codemirror/view": "^6.0.0",
