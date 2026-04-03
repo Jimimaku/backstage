@@ -60,15 +60,15 @@
   "dependencies": {
     "@backstage/catalog-model": "workspace:^",
     "@backstage/config": "workspace:^",
-    "@backstage/core-components": "workspace:^",
+    "@backstage/core-components": "0.1.0",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/frontend-plugin-api": "workspace:^",
-    "@backstage/plugin-techdocs-common": "workspace:^",
+    "@backstage/plugin-techdocs-common": "0.1.0",
     "@backstage/version-bridge": "workspace:^",
     "@material-ui/core": "^4.12.2",
     "@material-ui/styles": "^4.11.0",
     "jss": "~10.10.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.18.1",
     "react-helmet": "6.1.0",
     "react-use": "^17.2.4"
   },
