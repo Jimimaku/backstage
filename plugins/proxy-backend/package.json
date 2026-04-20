@@ -49,9 +49,9 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/backend-plugin-api": "workspace:^",
-    "@backstage/plugin-proxy-node": "workspace:^",
-    "@backstage/types": "workspace:^",
+    "@backstage/backend-plugin-api": "0.1.0",
+    "@backstage/plugin-proxy-node": "0.1.0",
+    "@backstage/types": "0.1.1",
     "express-promise-router": "^4.1.0",
     "http-proxy-middleware": "^2.0.0"
   },
