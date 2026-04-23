@@ -70,7 +70,7 @@
     "@backstage/plugin-catalog-react": "workspace:^",
     "@backstage/plugin-permission-react": "workspace:^",
     "@backstage/plugin-scaffolder-common": "workspace:^",
-    "@backstage/plugin-scaffolder-react": "workspace:^",
+    "@backstage/plugin-scaffolder-react": "1.0.0",
     "@backstage/plugin-techdocs-common": "workspace:^",
     "@backstage/plugin-techdocs-react": "workspace:^",
     "@backstage/types": "workspace:^",
