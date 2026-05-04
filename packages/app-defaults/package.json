@@ -36,7 +36,7 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/core-app-api": "workspace:^",
+    "@backstage/core-app-api": "0.1.0",
     "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/plugin-permission-react": "workspace:^",
