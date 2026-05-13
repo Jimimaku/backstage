@@ -48,9 +48,9 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/catalog-model": "workspace:^",
+    "@backstage/catalog-model": "0.1.1",
     "@backstage/errors": "workspace:^",
-    "@backstage/filter-predicates": "workspace:^",
+    "@backstage/filter-predicates": "0.1.0",
     "cross-fetch": "^4.0.0",
     "lodash": "^4.17.21",
     "uri-template": "^2.0.0"
