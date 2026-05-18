@@ -69,7 +69,7 @@
     "@backstage/integration": "workspace:^",
     "@backstage/integration-react": "workspace:^",
     "@backstage/plugin-auth-react": "workspace:^",
-    "@backstage/plugin-catalog-react": "workspace:^",
+    "@backstage/plugin-catalog-react": "0.0.1",
     "@backstage/plugin-search-common": "workspace:^",
     "@backstage/plugin-search-react": "workspace:^",
     "@backstage/plugin-techdocs-common": "workspace:^",
