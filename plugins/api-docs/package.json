@@ -60,9 +60,9 @@
     "@backstage/frontend-plugin-api": "workspace:^",
     "@backstage/plugin-catalog": "workspace:^",
     "@backstage/plugin-catalog-common": "workspace:^",
-    "@backstage/plugin-catalog-react": "workspace:^",
+    "@backstage/plugin-catalog-react": "0.0.1",
     "@backstage/plugin-permission-react": "workspace:^",
-    "@backstage/ui": "workspace:^",
+    "@backstage/ui": "0.6.0",
     "@graphiql/react": "0.29.0",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
@@ -71,7 +71,7 @@
     "graphiql": "^3.9.0",
     "graphql": "^16.0.0",
     "graphql-ws": "^5.4.1",
-    "swagger-ui-react": "^5.27.1"
+    "swagger-ui-react": "^5.32.7"
   },
   "devDependencies": {
     "@backstage/cli": "workspace:^",
