@@ -33,7 +33,7 @@
   "prettier": "@backstage/cli/config/prettier",
   "dependencies": {
     "@backstage/catalog-model": "workspace:^",
-    "@backstage/cli": "workspace:^",
+    "@backstage/cli": "0.1.1",
     "@backstage/config": "workspace:^",
     "@backstage/core-app-api": "workspace:^",
     "@backstage/core-components": "workspace:^",
