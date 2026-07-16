@@ -46,10 +46,10 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/backend-plugin-api": "workspace:^",
+    "@backstage/backend-plugin-api": "0.1.0",
     "@backstage/config": "workspace:^",
-    "@backstage/connections": "workspace:^",
-    "@backstage/errors": "workspace:^"
+    "@backstage/connections": "0.1.0",
+    "@backstage/errors": "0.1.1"
   },
   "devDependencies": {
     "@backstage/backend-defaults": "workspace:^",
