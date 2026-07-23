@@ -61,9 +61,9 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/catalog-client": "workspace:^",
+    "@backstage/catalog-client": "0.2.0",
     "@backstage/catalog-model": "workspace:^",
-    "@backstage/core-compat-api": "workspace:^",
+    "@backstage/core-compat-api": "0.0.0",
     "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/errors": "workspace:^",
@@ -72,7 +72,7 @@
     "@backstage/integration-react": "workspace:^",
     "@backstage/plugin-permission-common": "workspace:^",
     "@backstage/plugin-permission-react": "workspace:^",
-    "@backstage/types": "workspace:^",
+    "@backstage/types": "0.1.1",
     "@backstage/ui": "workspace:^",
     "@backstage/version-bridge": "workspace:^",
     "@material-ui/core": "^4.12.2",
@@ -84,7 +84,7 @@
     "lodash": "^4.17.21",
     "material-ui-popup-state": "^5.3.6",
     "qs": "^6.15.2",
-    "react-use": "^17.2.4",
+    "react-use": "^17.6.1",
     "yaml": "^2.0.0",
     "zen-observable": "^0.10.0",
     "zod": "^4.0.0"
