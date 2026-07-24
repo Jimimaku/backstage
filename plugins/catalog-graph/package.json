@@ -54,8 +54,8 @@
     "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/frontend-plugin-api": "workspace:^",
-    "@backstage/plugin-catalog-react": "workspace:^",
-    "@backstage/types": "workspace:^",
+    "@backstage/plugin-catalog-react": "0.0.1",
+    "@backstage/types": "0.1.1",
     "@backstage/ui": "workspace:^",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
@@ -64,7 +64,7 @@
     "classnames": "^2.3.1",
     "lodash": "^4.17.15",
     "qs": "^6.15.2",
-    "react-use": "^17.2.4",
+    "react-use": "^17.6.1",
     "zod": "^4.0.0"
   },
   "devDependencies": {
