@@ -48,7 +48,7 @@
     "@backstage/catalog-model": "workspace:^",
     "@backstage/cli-common": "workspace:^",
     "@backstage/config": "workspace:^",
-    "@backstage/plugin-techdocs-node": "workspace:^",
+    "@backstage/plugin-techdocs-node": "0.11.12",
     "commander": "^14.0.3",
     "fs-extra": "^11.0.0",
     "http-proxy": "^1.18.1",
