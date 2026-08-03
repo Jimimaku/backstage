@@ -42,7 +42,7 @@
     "watch": "./src"
   },
   "dependencies": {
-    "@backstage/cli-common": "workspace:^",
+    "@backstage/cli-common": "0.1.1",
     "@backstage/cli-defaults": "workspace:^",
     "@backstage/cli-module-build": "workspace:^",
     "@backstage/cli-module-test-jest": "workspace:^",
