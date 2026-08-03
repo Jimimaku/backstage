@@ -43,7 +43,7 @@
     "@backstage/config": "workspace:^",
     "@backstage/errors": "workspace:^",
     "@backstage/plugin-catalog-common": "workspace:^",
-    "@backstage/plugin-catalog-node": "workspace:^",
+    "@backstage/plugin-catalog-node": "1.0.0",
     "@backstage/types": "workspace:^",
     "ldapts": "^8.0.6",
     "lodash": "^4.17.21"
