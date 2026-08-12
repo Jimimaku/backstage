@@ -43,10 +43,10 @@
     "watch": "./src"
   },
   "dependencies": {
-    "@backstage/cli-common": "workspace:^",
+    "@backstage/cli-common": "0.1.1",
     "chalk": "^4.0.0",
     "commander": "^14.0.3",
-    "jscodeshift": "^0.16.0",
+    "jscodeshift": "^17.1.0",
     "jscodeshift-add-imports": "^1.0.10"
   },
   "devDependencies": {
