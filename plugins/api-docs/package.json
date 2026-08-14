@@ -60,7 +60,7 @@
     "@backstage/frontend-plugin-api": "workspace:^",
     "@backstage/plugin-catalog": "workspace:^",
     "@backstage/plugin-catalog-common": "workspace:^",
-    "@backstage/plugin-catalog-react": "workspace:^",
+    "@backstage/plugin-catalog-react": "0.0.1",
     "@backstage/plugin-permission-react": "workspace:^",
     "@backstage/ui": "workspace:^",
     "@graphiql/react": "0.29.0",
