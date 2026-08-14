@@ -54,12 +54,12 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/backend-plugin-api": "workspace:^",
+    "@backstage/backend-plugin-api": "0.1.0",
     "@backstage/config": "workspace:^",
-    "@backstage/config-loader": "workspace:^",
-    "@backstage/errors": "workspace:^",
-    "@backstage/plugin-app-node": "workspace:^",
-    "@backstage/plugin-auth-node": "workspace:^",
+    "@backstage/config-loader": "0.1.1",
+    "@backstage/errors": "0.1.1",
+    "@backstage/plugin-app-node": "0.1.0",
+    "@backstage/plugin-auth-node": "0.1.0",
     "@backstage/types": "workspace:^",
     "express": "^4.22.0",
     "express-promise-router": "^4.1.0",
