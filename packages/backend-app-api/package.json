@@ -46,11 +46,11 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/backend-plugin-api": "workspace:^",
+    "@backstage/backend-plugin-api": "0.1.0",
     "@backstage/config": "workspace:^",
     "@backstage/connections": "workspace:^",
     "@backstage/errors": "workspace:^",
-    "@backstage/types": "workspace:^",
+    "@backstage/types": "0.1.1",
     "zod": "^3.25.76 || ^4.0.0"
   },
   "devDependencies": {
