@@ -40,7 +40,7 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/core-app-api": "workspace:^",
+    "@backstage/core-app-api": "0.1.0",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/integration-react": "workspace:^",
     "@backstage/plugin-catalog": "workspace:^",
@@ -48,7 +48,7 @@
     "@backstage/plugin-search-react": "workspace:^",
     "@backstage/plugin-techdocs": "workspace:^",
     "@backstage/plugin-techdocs-react": "workspace:^",
-    "@backstage/test-utils": "workspace:^",
+    "@backstage/test-utils": "0.1.1",
     "shadow-dom-testing-library": "^1.13.1"
   },
   "devDependencies": {
