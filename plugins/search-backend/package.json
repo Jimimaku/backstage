@@ -56,13 +56,13 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage/backend-openapi-utils": "workspace:^",
+    "@backstage/backend-openapi-utils": "0.0.1",
     "@backstage/backend-plugin-api": "workspace:^",
     "@backstage/config": "workspace:^",
     "@backstage/errors": "workspace:^",
     "@backstage/plugin-permission-common": "workspace:^",
     "@backstage/plugin-permission-node": "workspace:^",
-    "@backstage/plugin-search-backend-node": "workspace:^",
+    "@backstage/plugin-search-backend-node": "0.1.2",
     "@backstage/plugin-search-common": "workspace:^",
     "@backstage/types": "workspace:^",
     "dataloader": "^2.0.0",
